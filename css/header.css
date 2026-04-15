@@ -1,0 +1,185 @@
+@import url("variables.css");
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--primary-color);
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo-header {
+    width: 100%;
+    max-width: 320px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--second-color);
+    padding: 10px 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: auto;
+    /* 🔥 permite quebrar em telas menores */
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+/* ICONES */
+.link-logo {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+    margin: 5px;
+}
+
+.link-logo:hover {
+    transform: scale(1.2);
+}
+
+/* MENU */
+.main-nav ul {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    /* melhor que margin */
+    flex-wrap: wrap;
+    /* 🔥 quebra automaticamente */
+    justify-content: center;
+}
+
+.main-nav ul li {
+    list-style: none;
+}
+
+/* LINKS */
+.link {
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: var(--second-color);
+    font-weight: var(--font-extra-light);
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: var(--accent-gold);
+    font-weight: var(--font-light);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--second-color);
+    transition: 0.3s;
+}
+
+/* Esconde os ícones pra não poluir */
+
+.navbar div {
+    display: flex;
+}
+
+.main-nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.logo-header {
+    animation: fadeUp 0.8s ease;
+}
+
+.navbar {
+    animation: fadeUp 0.8s ease;
+}
+
+.main-nav {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= MOBILE (ATÉ 428px) ================= */
+
+@media (max-width: 430px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-header {
+        width: 50%;
+    }
+
+    /* MOSTRA HAMBÚRGUER */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* ESCONDE ÍCONES */
+    .navbar div {
+        display: none;
+    }
+
+
+    /* MENU Aparecer */
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .main-nav.active {
+        display: block;
+        transition: 0.4s;
+    }
+
+
+    .link {
+        font-size: 1.2rem;
+    }
+}

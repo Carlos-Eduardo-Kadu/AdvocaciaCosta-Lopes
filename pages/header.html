@@ -1,0 +1,49 @@
+<div class="navbar">
+  <img class="logo-header" src="../assets/icons/Logo - CL.png" alt="" />
+
+  <!-- BOTÃO HAMBÚRGUER -->
+  <button class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div>
+    <a href="" target="_blank">
+      <img
+        src="../assets/icons/instagram logo.png"
+        alt="instagram"
+        class="link-logo"
+      />
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=61993069053" target="_blank">
+      <img src="../assets/icons/Wpp.png" alt="whatsapp" class="link-logo" />
+    </a>
+  </div>
+</div>
+
+<div class="main-nav">
+  <nav>
+    <ul>
+      <li><a class="link" href="#header">Inicio</a></li>
+      <li><a class="link" href="#sobre">Sobre</a></li>
+      <li><a class="link" href="#atuacao">Área de atuação</a></li>
+      <li><a class="link" href="">Artigos</a></li>
+      <li><a class="link" href="">Contato</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".main-nav");
+
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    nav.classList.toggle("active");
+  });
+});
+</script>

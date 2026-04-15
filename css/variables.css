@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --primary-color: #611926;
+  --second-color: #FFF5EA;
+
+  --primary-light: #8A2F3B;
+  --primary-dark: #3E0F17;
+
+  --accent-green: #6A8D73;
+  --accent-blue: #355C7D;
+  --accent-gold: #C9A66B;
+
+  --neutral-dark: #2E2E2E;
+  --neutral-medium: #8C8C8C;
+  --neutral-light: #F2E9E4;
+
+--font-primary: 'Josefin Sans', sans-serif;
+
+  /* Font Weights (variável completa) */
+  --font-thin: 100;
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Font Sizes (escala consistente) */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.75rem;   /* 28px */
+  --font-size-2xl: 2.5rem;   /* 40px */
+  --font-size-3xl: 3.5rem;   /* 56px */
+
+  /* Line Height */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.8;
+
+  /* Letter Spacing (IMPORTANTE pra Josefin Sans) */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "Direito Previdenciário",
+    "categoria": "previdenciario",
+    "descricao": "Direito previdenciário garante benefícios e segurança social plena",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "titulo": "Direito Trabalhista",
+    "categoria": "trabalhista",
+    "descricao": "Direito civil regula relações e protege direitos e deveres básicos",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "titulo": "Direito Civil",
+    "categoria": "civil",
+    "descricao": "Direito trabalhista assegura emprego justo e relações legais hoje",
+    "link": "./pages/page-artigos/artigo-direito.html"
+  }
+]

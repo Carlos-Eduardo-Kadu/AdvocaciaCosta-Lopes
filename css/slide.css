@@ -1,0 +1,146 @@
+@import url("variables.css");
+
+
+.container{
+    background-image: url(../assets/icons/bg-section.png);
+    width: 100%;
+    height: 31rem;
+    display: flex;
+}
+
+.section-about{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-about h1{
+    font-family: var(--font-primary);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-2xl);
+    color: var(--second-color);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.section-about h2{
+    font-family: var(--font-primary);
+    font-weight: var(--font-light);
+    color: var(--second-color);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.section-about div{
+    display: flex;
+    margin: 10px;
+}
+
+.section-about div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.75rem;
+    height: 2.813rem;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+.section-img{
+    width: 35%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section-img img{
+    width: 400px;
+    height: 500px;
+}
+
+.a-contato{
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
+
+.a-serviço{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.a-contato:hover{
+    background-color: var(--primary-light);
+    transition: 0.4s;
+}
+
+.a-serviço:hover{
+    background-color: var(--accent-gold);
+    color: var(--second-color);
+    transition: 0.4s;
+}
+
+.section-about {
+    animation: fadeUp 0.8s ease;
+}
+
+.section-img {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 750px) {
+    
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .section-img {
+        display: none;
+    }
+
+}
+
+/* SMARTPHONES (até 428px) */
+@media (max-width: 428px) {
+     .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: auto;
+    }
+   .section-img {
+        display: none;
+    }
+}
+
+/* SMARTPHONES (até 428px) */
+@media (max-width: 328px) {
+     .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: auto;
+    }
+   .section-img {
+        display: none;
+    }
+}
