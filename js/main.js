@@ -44,28 +44,6 @@ function initSwiper() {
   });
 }
 
-// 🔥 SOLUÇÃO DEFINITIVA — clique global (funciona em TODOS os slides)
-document.addEventListener("click", function (e) {
-  const link = e.target.closest(".card-link");
-
-  if (!link) return;
-
-  e.preventDefault();
-
-  const card = link.closest(".card");
-  if (!card) return;
-
-  const msgBase = card.getAttribute("data-msg");
-  if (!msgBase) return;
-
-  const numero = "5561993069053";
-
-  const mensagem = `Olá! Vim pelo site e gostaria de atendimento sobre ${msgBase}.`;
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-  window.open(url, "_blank");
-});
-
 // iniciar tudo
 document.addEventListener("DOMContentLoaded", () => {
   carregarComponente("./pages/header.html", "header");
