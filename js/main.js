@@ -9,7 +9,6 @@ async function carregarComponente(url, id) {
     if (id === "atuacao") {
       initSwiper();
     }
-
   } catch (erro) {
     console.error("Erro ao carregar:", erro);
   }
@@ -51,8 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
   carregarComponente("./pages/sobre.html", "sobre");
   carregarComponente("./pages/atuacao.html", "atuacao");
   carregarComponente("./pages/artigos.html", "artigos");
-
 });
-
-
-

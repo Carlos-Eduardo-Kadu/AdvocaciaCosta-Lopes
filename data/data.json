@@ -1,23 +1,40 @@
-[
-  {
-    "id": 1,
-    "titulo": "Direito Previdenciário",
-    "categoria": "previdenciario",
-    "descricao": "Direito previdenciário garante benefícios e segurança social plena",
-    "link": "#"
-  },
-  {
-    "id": 2,
-    "titulo": "Direito Trabalhista",
-    "categoria": "trabalhista",
-    "descricao": "Direito civil regula relações e protege direitos e deveres básicos",
-    "link": "#"
-  },
-  {
-    "id": 3,
-    "titulo": "Direito Civil",
-    "categoria": "civil",
-    "descricao": "Direito trabalhista assegura emprego justo e relações legais hoje",
-    "link": "./pages/page-artigos/artigo-direito.html"
-  }
-]
+{
+  "artigos": [
+    {
+      "titulo": "Direito Digital e a Inteligência Artificial (IA)",
+      "autor": "Alessandra Lopes",
+      "data": "22 de abril de 2026",
+      "tempoLeitura": "3 min de leitura",
+      "avatar": "https://i.pravatar.cc/100",
+      "conteudo": [
+        {
+          "tipo": "paragrafo",
+          "texto": "O encontro entre o Direito Digital e a Inteligência Artificial..."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "O que é o Direito Digital?",
+          "texto": "Não é um novo direito, mas uma evolução..."
+        },
+        {
+          "tipo": "secao",
+          "titulo": "A IA e o Desafio da Regulação",
+          "lista": [
+            "Responsabilidade Civil...",
+            "Propriedade Intelectual...",
+            "Viés e Discriminação..."
+          ]
+        },
+        {
+          "tipo": "tabela",
+          "cabecalho": ["Conceito", "Descrição"],
+          "linhas": [
+            ["Abordagem de Risco", "Classifica as IAs..."],
+            ["Direitos dos Usuários", "Direito de saber..."],
+            ["Transparência", "Empresas precisam explicar..."]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,31 +4,32 @@
 @import url("sobre.css");
 @import url("atuacao.css");
 @import url("artigos.css");
+@import url(artigoDireito.css);
 
 :root {
   --header-height: 140px;
   --header-height-media: 50px;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /* RESET ESSENCIAL */
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* remove a margem branca lateral */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* remove a margem branca lateral */
 }
 
 body {
-     padding-top: var(--header-height);
-    font-family: var(--font-size-md--);
+  padding-top: var(--header-height);
+  font-family: var(--font-size-md--);
 }
 
-
 @media (max-width: 430px) {
-    body {
-        padding-top: var(--header-height-media);
-    }
+  body {
+    padding-top: var(--header-height-media);
+  }
 }
